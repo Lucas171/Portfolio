@@ -1,0 +1,406 @@
+/*GLOBAL STYLES*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Roboto', helvetica, sans-serif;
+
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.clr {
+  clear: both;
+}
+
+
+
+
+
+/* END  OF GLOBAL STYLES */
+nav {
+  text-align: right;
+  width: 100%;
+
+}
+
+nav li{
+  list-style-type: none;
+  display: inline;
+}
+
+nav li a{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  animation: unround .2s alternate;
+
+
+}
+
+nav li a:hover{
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  animation: round .2s alternate;
+
+
+
+}
+
+@keyframes round {
+  from {
+    border-radius: 10px
+  }
+  to {
+    border-radius: 20px
+  }
+}
+
+@keyframes unround {
+  from {
+    border-radius: 20px
+  }
+  to {
+    border-radius: 10px
+  }
+}
+
+
+
+#mainSection{
+  background-image: url('/Users/lucasmiller/Desktop/code/RealPortfolio/images/cityimage.jpg');
+  width: 100%;
+  height: 750px;
+  background-position: 0px 0px;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+#mainSection h1{
+  font-size: 4rem;
+  padding-top: 225px;
+}
+
+#mainSection p{
+  font-size: 2rem;
+  color: grey;
+  font-weight: 200;
+}
+
+#mainSection img{
+  width: 30px;
+
+  margin: 10px 5px 0 10px;
+  transition: .2s ease-in-out
+}
+
+#mainSection img:hover{
+
+  transform: rotate(20deg);
+}
+
+#innerMainSection {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .67);
+  height: inherit;
+}
+
+#skills{
+  margin-top: 110px;
+  text-align: center;
+  float: right;
+  width: 60%;
+
+
+
+}
+
+#skills img{
+  margin: 0 20px;
+  width: 100px;
+  margin: 20px
+
+}
+
+#skill.firstRow{
+  float: left;
+}
+
+#skill.secondRow{
+  clear: both;
+}
+
+
+
+
+
+#aboutMeDescription{
+  width: 40%;
+  float: left;
+  line-height: 35px;
+  margin-top: 60px;
+  font-size: 1.1rem;
+  word-break: normal;
+
+}
+
+#aboutMeDescription h1, .projectsMainTitle{
+  margin-bottom: 10px;
+
+
+}
+
+hr{
+  width: 200px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.projectsHr {
+  margin-bottom: 80px;
+}
+
+.projectsMainTitle{
+  margin-top: 90px;
+}
+
+.projects{
+  margin-top: 150px;
+
+}
+.projectImage{
+  width: 100%;
+  display: block;
+}
+
+.projectLeft{
+  text-align: center;
+  float: left;
+  width: 40%;
+}
+
+.projectLeft a{
+  text-decoration: none;
+  color: grey;
+
+}
+
+.projectLeft p{
+  margin-top: 10px;
+
+}
+
+.projectLeft div.firstRow img, .projectLeft div.secondRow img{
+  width: 50px;
+  margin: 10px;
+}
+
+.projectLinks{
+  margin: 5px;
+}
+.firstProject, .secondProject{
+  float: left;
+  width: 50%;
+ box-sizing: border-box;
+
+}
+
+.firstProject{
+
+}
+.secondProject{
+  float: right;
+}
+
+.projectRight{
+  float: right;
+  width: 60%;
+
+}
+.projectRight h1{
+  text-align: center;
+}
+
+.projectRight p{
+  line-height: 40px;
+  padding: 20px;
+  font-size: 15px
+}
+
+#formGroup{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 60px;
+
+}
+
+form{
+  width: 100%;
+  margin: auto;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+form h1, #socialMediaLinks h1{
+  margin-top: 100px;
+}
+
+
+form input[type='text'], form input[type='email'], textarea{
+  display: block;
+
+}
+
+input{
+
+  width: 50%;
+  padding: 10px 0;
+  margin: 0 auto 20px auto;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+
+
+}
+textarea{
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  margin: 0 auto 10px auto;
+}
+
+form button{
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #0044ff;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 16px;
+  animation: unround .4s alternate;
+}
+
+form button:hover{
+  border-radius: 20px;
+  animation: round .4s alternate;
+  background-color: #0077ff;
+}
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0
+}
+
+footer li{
+  list-style-type: none;
+  display: inline;
+
+
+}
+footer img{
+  width: 25px;
+  margin: 0 5px;
+  transition: .2s ease-in-out
+}
+
+footer p{
+  margin-top: 10px;
+}
+
+
+footer img:hover{
+
+transform: rotate(20deg);
+
+}
+
+
+
+@media (max-width: 1170px) {
+  #aboutMeDescription{
+    float: none;
+    width: 100%;
+  }
+
+  #skills{
+    float: none;
+    width: 100%;
+  }
+
+  .firstProject{
+    float: none;
+    width: 100%;
+
+  }
+  .secondProject{
+    float: none;
+    clear: both;
+    width: 100%;
+
+  }
+
+  div.secondRow{
+    margin-bottom: 100px
+  }
+
+  section.projects{
+    margin-top: 20px;
+  }
+  input, textarea{
+
+    width: 100%
+  }
+
+
+
+}
+
+@media (max-width: 850px) {
+  div.projectRight, div.projectLeft{
+    float: none;
+    clear: both;
+    width: 80%;
+    margin: auto;
+  }
+
+  img.projectImage{
+    width: 70%;
+    margin:  40px auto;
+  }
+  input, textarea{
+    width: 100%
+  }
+
+  div.secondRow{
+    margin-bottom: 50px;
+  }
+
+  div.projectRight p{
+    margin-bottom: 100px;
+  }
+}
