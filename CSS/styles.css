@@ -407,7 +407,7 @@ transform: rotate(20deg);
 
 @media (max-width: 375px) {
   #mainSection h1{
-    font-size: 3rem
+    font-size: 2rem
   }
 
   #mainSection p{
