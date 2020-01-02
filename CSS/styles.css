@@ -86,7 +86,7 @@ nav li a:hover{
 
 
 #mainSection{
-  background-image: url('/Users/lucasmiller/Desktop/code/RealPortfolio/images/cityimage.jpg');
+  background-image: url(../images/cityimage.png);
   width: 100%;
   height: 750px;
   background-position: 0px 0px;
