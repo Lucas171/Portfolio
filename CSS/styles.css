@@ -404,3 +404,13 @@ transform: rotate(20deg);
     margin-bottom: 100px;
   }
 }
+
+@media (max-width: 353px) {
+  #mainSection h1{
+    font-size: 3rem
+  }
+
+  #mainSection p{
+    font-size: 1.5rem
+  }
+}
