@@ -405,7 +405,7 @@ transform: rotate(20deg);
   }
 }
 
-@media (max-width: 353px) {
+@media (max-width: 375px) {
   #mainSection h1{
     font-size: 3rem
   }
