@@ -26,6 +26,10 @@ body {
   clear: both;
 }
 
+h1.dontShow{
+  visibility: hidden;
+}
+
 
 
 
@@ -339,6 +343,23 @@ transform: rotate(20deg);
 
 }
 
+div.top{
+  position: fixed;
+  top: 500px;
+  right: 0px;
+  background-color: black;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px 0 0 10px
+
+}
+
+div.top a{
+  text-decoration: none;
+  color: white;
+
+}
+
 
 
 @media (max-width: 1170px) {
@@ -378,6 +399,10 @@ transform: rotate(20deg);
 
 
 
+
+
+
+
 }
 
 @media (max-width: 850px) {
@@ -402,6 +427,12 @@ transform: rotate(20deg);
 
   div.projectRight p{
     margin-bottom: 100px;
+  }
+  h1.show{
+    visibility: visible;
+  }
+  div.projectRight h1{
+    visibility: hidden;
   }
 }
 
